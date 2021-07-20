@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>NHSS: A Speech and Singing Parallel Database</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <style>
+    .menu-index {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
+</head>
+
+<body>
+ 
+<div class="menu-container"></div>
+  <div class="content-container">
+    <div class="content">
+      <div class="content-table flex-column">
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Intro-->
+<h2 class="add-top-margin">Demo of Speech-to-singing Conversion</h2>  	      
+<hr>
+<br>	    
+<table style="height: 100%;" border="2" width="1000">
+<tbody>
+<tr>
+<td style="text-align: center; width: 301.333px;">Method</td>
+<td style="text-align: center; width: 301.333px;">Sample1</td>
+<td style="text-align: center; width: 301.333px;">Sample2</td>
+<td style="text-align: center; width: 301.333px;">Sample3</td>
+<td style="text-align: center; width: 301.333px;">Sample4</td>
+<td style="text-align: center; width: 301.333px;">Sample5</td>
+</tr>
+<tr>
+<td style="text-align: center; width: 301.333px;">User's Speech</td>
+<td style="width: 301.333px;"><audio controls="controls">
+			  <source src="audio/speech_2214.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+<td style="width: 301.333px;"><audio controls="controls">
+			  <source src="audio/speech_2241.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+<td style="width: 301.333px;"><audio controls="controls">
+			  <source src="audio/speech_2259.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+<td style="width: 301.333px;"><audio controls="controls">
+			  <source src="audio/speech_2269.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+<td style="width: 301.333px;"><audio controls="controls">
+			  <source src="audio/speech_2289.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+</tr>
+
+<tr>
+<td style="text-align: center; width: 301.333px;">Zero-effort Transfer</td>
+<td style="width: 301.333px;"><audio controls="controls">
+			  <source src="audio/zero_effort_2214.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+<td style="width: 301.333px;"><audio controls="controls">
+			  <source src="audio/zero_effort_2241.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+<td style="width: 301.333px;"><audio controls="controls">
+			  <source src="audio/zero_effort_2259.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+<td style="width: 301.333px;"><audio controls="controls">
+			  <source src="audio/zero_effort_2269.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+<td style="width: 301.333px;"><audio controls="controls">
+			  <source src="audio/zero_effort_2289.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+</tr>
+<tr>
+<td style="text-align: center; width: 301.333px;">Speaker-dependent Spectral Mapping</td>
+<td style="width: 301.333px;"><audio controls="controls">
+			  <source src="audio/SD_2214.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+<td style="width: 301.333px;"><audio controls="controls">
+			  <source src="audio/SD_2241.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+<td style="width: 301.333px;"><audio controls="controls">
+			  <source src="audio/SD_2259.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+<td style="width: 301.333px;"><audio controls="controls">
+			  <source src="audio/SD_2269.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+<td style="width: 301.333px;"><audio controls="controls">
+			  <source src="audio/SD_2289.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+</tr>
+<tr>
+<td style="text-align: center; width: 301.333px;">Speaker-independent Spectral Mapping</td>
+<td style="width: 301.333px;"><audio controls="controls">
+			  <source src="audio/SI_2214.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+<td style="width: 301.333px;"><audio controls="controls">
+			  <source src="audio/SI_2241.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+<td style="width: 301.333px;"><audio controls="controls">
+			  <source src="audio/SI_2259.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+<td style="width: 301.333px;"><audio controls="controls">
+			  <source src="audio/SI_2269.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+<td style="width: 301.333px;"><audio controls="controls">
+			  <source src="audio/SI_2289.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+</tr>	
+<tr>
+<td style="text-align: center; width: 301.333px;">Original Singing</td>
+<td style="width: 301.333px;"><audio controls="controls">
+			  <source src="audio/singing_2214.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+<td style="width: 301.333px;"><audio controls="controls">
+			  <source src="audio/singing_2241.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+<td style="width: 301.333px;"><audio controls="controls">
+			  <source src="audio/singing_2259.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+<td style="width: 301.333px;"><audio controls="controls">
+			  <source src="audio/singing_2269.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+<td style="width: 301.333px;"><audio controls="controls">
+			  <source src="audio/singing_2289.wav" type="audio/wav" />
+			Your browser does not support the audio element.
+			</audio></td>
+</tr>
+</tbody>
+</table>
+</div> 	 
+</div>
+	
+<div class="flex-row">
+          <div class="flex-item flex-column">
+	<h2 class="add-top-margin">Speech-to-singing Conversion</h2>
+            <p class="text add-top-margin">
+              We carry out another experiment on the NHSS for speech-to-singing conversion , that serves as a reference system for readers. In  speech-to-singing  conversion, we  convert  the read speech by a user (user’s speech) into his/her singing with the same lyrical content. The basic idea of speech-to-singing conversion is to transform the prosody and spectral features from user’s speech to those of reference singing, while preserving speaker identity of the user. In this work, we particularly focus on template-based speech-to-singing conversion, where  we  keep  the  prosody  same  as  that  of the reference singing.  We perform neural network based spectral mapping to convert the spectral features of speech to that of the singing voice.
+              </p>
+	      <p class="text add-top-margin">
+	     We   compare   three   speech-to-singing   conversion   approaches,  namely,  zero-effort transfer,  speaker-dependentspectral mapping, and speaker-independent spectral map-ping.  In all the methods, we use the manually annotated word boundaries and tandem features with DTW to obtainthe alignment between the frames of speech and singing.
+              
+            </p>
+          </div>
+        </div>  
+	      
+	  <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin">Zero-effort Transfer</h2>
+            <hr>
+            <img class="image" src="img/ZeroEffort-1.png">
+            </h2>
+          </div>
+        </div>
+	    
+	<div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin">Speaker Dependent</h2>
+            <hr>
+            <img class="image" src="img/SD-1.png">
+            </h2>
+          </div>
+        </div>
+	  
+	  
+	<div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin">Speaker Independent</h2>
+            <hr>
+            <img class="image" src="img/SI-1.png">
+            </h2>
+          </div>
+        </div>
+
+	  <div class="flex-row">
+          <div class="flex-item flex-column">
+	    <h2 class="add-top-margin">Reference</h2>  
+            <hr>
+            <p class="text">
+		    Please refer the following paper if you use this database </p> 
+	 <p class="text">  Bidisha Sharma, Xiaoxue Gao, Karthika Vijayan, Xiaohai Tian, and Haizhou Li. "NHSS: A Speech and Singing Parallel Database." arXiv preprint arXiv:2012.00337 (2020). <a href="https://arxiv.org/abs/2012.00337">https://arxiv.org/abs/2012.00337</a> </p> 
+
+<p class="text">
+
+@article{sharma2020nhss,<br>
+  title={NHSS: A Speech and Singing Parallel Database},<br>
+  author={Sharma, Bidisha and Gao, Xiaoxue and Vijayan, Karthika and Tian, Xiaohai and Li, Haizhou},<br>
+  journal={arXiv preprint arXiv:2012.00337},<br>
+  year={2020}
+}       	      
+ </p> 
+        <!-- <div class="flex-row">
+          <div class="flex-item flex-column">
+	    <h2 class="add-top-margin">Download the Database</h2>  
+            <hr>
+            <p class="text">
+              The NHSS database is provided strictly for research purposes only. To acquire the database, fill up the following licence and <a href="mailto:s.bidisha@nus.edu.sg?Subject=Hello%20again" target="_top">email us</a>.        	      
+	    </p>  -->
+	      
+<!-- <h2 class="add-top-margin">NHSS Database Licence</h2>  
+<hr>		  
+<p><iframe src="uploads/NUSLicence.pdf#toolbar=0" width="100%" height="500px">
+    </iframe></p>-->
+	      
+	      
+      </div>
+    </div>
+  </div>	
+</body>
+</html>
